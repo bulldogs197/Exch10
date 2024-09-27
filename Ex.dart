@@ -35,7 +35,7 @@ void main(List<String> args) {
   var circle = Circle(5);
   var rectangle = Rectangle(10, 20);
   circle.draw();
-  print("Area of Circle: ${circle.calculateArea()}");
+  print("Area of Circle: ${circle.calculateArea().toStringAsFixed(2)}");
   rectangle.draw();
   print("Area of Rectangle: ${rectangle.calculateArea()}");
 }
