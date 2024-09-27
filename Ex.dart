@@ -3,7 +3,7 @@ import 'dart:math';
 abstract class Shape{
   void calculateArea();
 }
-abstract class Drawable extends Shape{
+abstract class Drawable{
     void draw();
 }
 
@@ -19,7 +19,7 @@ class Circle extends Shape implements Drawable{
   }
 }
 
-class Rectangle implements Drawable{
+class Rectangle extends Shape implements Drawable{
   double width;
   double height;
   Rectangle(this.width, this.height);
